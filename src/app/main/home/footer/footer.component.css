@@ -1,0 +1,16 @@
+.maindiv {
+    background-color: black;
+    color: whitesmoke;
+    font-family: bold;
+    height: 15vh;
+    position: relative;
+}
+
+.copyRightText {
+    position: absolute;
+    top: 35%;
+    bottom: 0;
+    right: 0;
+    left: 36%;
+    margin: 0 auto;
+}

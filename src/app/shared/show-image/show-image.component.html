@@ -1,0 +1,15 @@
+<div class="card container" *ngFor="let item of imageDetailsList">
+    <img [src]="item.urls.small" class="imgsize" alt="" />
+    <div class="overlay" *ngIf="idHomeScreen">
+        <p class="column" (click)="redirectToAuthor(item)">
+            <img [src]="item.user.profile_image.small" class="userPhoto" alt=""> {{ item.user.name }}
+        </p>
+        <div class="favouriteIcon" (click)="addtoFavourite(item)">
+            <img class="favourite-icon" src="/assets/icons/heart.png" alt="" />
+        </div>
+    </div>
+</div>
+
+<!-- <section id="photos">
+    <img [src]="item.urls.full" *ngFor="let item of imageDetailsList" alt="Cute cat">
+</section> -->

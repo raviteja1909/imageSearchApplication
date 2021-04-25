@@ -1,0 +1,23 @@
+p {
+    text-align: center;
+}
+
+mat-paginator {
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+.toShowimageComponent {
+    margin-left: 1%;
+}
+
+.forNoresultsFound {
+    width: 100%;
+    height: 74vh;
+    text-align: center;
+}
+
+.noImageFound {
+    width: 50%;
+    height: 100%;
+}
