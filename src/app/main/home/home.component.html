@@ -1,0 +1,11 @@
+<app-nav [searchValue]="searchValue" (emitSearchKey)="searchImages($event)"></app-nav>
+<div fxLayout="column" class="toShowimageComponent">
+    <app-show-image [idHomeScreen]="true" [imageDetails]="searchedImages" (opendailog)="openDailog($event)" (emitAuthorEvent)="redirectToAuthor($event)"></app-show-image>
+    <mat-paginator *ngIf="showPagination && !noResultsFound" (page)="pageEvent()" [length]="paginationLenght" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions">
+    </mat-paginator>
+</div>
+
+<div *ngIf="noResultsFound" class="forNoresultsFound">
+    <img src="assets/icons/Noimagefound.jpg" class="noImageFound" alt="">
+</div>
+<app-footer></app-footer>
